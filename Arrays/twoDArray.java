@@ -4,10 +4,7 @@ import java.util.Scanner;
 
 public class twoDArray {
 
-    public static int[][] add(int[][] a, int[][] b) {
-
-        int rows = a.length;
-        int cols = a[0].length;
+    public static int[][] add(int[][] a, int[][] b, int rows, int cols) {
 
         int[][] result = new int[rows][cols];
 
@@ -21,10 +18,7 @@ public class twoDArray {
         return result;
     }
 
-    public static int[][] subtract(int[][] a, int[][] b) {
-
-        int rows = a.length;
-        int cols = a[0].length;
+    public static int[][] subtract(int[][] a, int[][] b, int rows, int cols) {
 
         int[][] result = new int[rows][cols];
 
@@ -38,10 +32,7 @@ public class twoDArray {
         return result;
     }
 
-    public static int[][] multiply(int[][] a, int[][] b) {
-
-        int rows = a.length;
-        int cols = a[0].length;
+    public static int[][] multiply(int[][] a, int[][] b, int rows, int cols) {
 
         int[][] result = new int[rows][cols];
 
@@ -56,9 +47,9 @@ public class twoDArray {
 
     }
 
-    public static void display(int[][] arr) {
-        for (int i = 0; i < arr.length; i++) {
-            for (int j = 0; j < arr[i].length; j++) {
+    public static void display(int[][] arr, int rows, int cols) {
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
                 System.out.print(arr[i][j] + "\t");
             }
             System.out.println();
@@ -96,13 +87,13 @@ public class twoDArray {
         }
 
         System.out.println("Addition : ");
-        display(add(a, b));
+        display(add(a, b, cols, cols), cols, cols);
 
         System.out.println("Subtraction : ");
-        display(subtract(a, b));
+        display(subtract(a, b, cols, cols), cols, cols);
 
         System.out.println("Multiplication : ");
-        display(multiply(a, b));
+        display(multiply(a, b, cols, cols), cols, cols);
 
         sc.close();
     }
