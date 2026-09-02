@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class Demo {
 
     public static void main(String[] args) {
-        @SuppressWarnings("unused")
+
         Scanner sc = new Scanner(System.in);
         char x = 'A';
         switch (x) {
@@ -19,6 +19,7 @@ public class Demo {
         }
 
         System.out.println();
+        sc.close();
     }
 
 }
