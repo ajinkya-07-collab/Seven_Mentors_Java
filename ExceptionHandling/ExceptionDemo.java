@@ -28,11 +28,13 @@ public class ExceptionDemo {
                 int[] arr = { 1, 2, 3, 4, 5 };
                 System.out.println(arr[8]);
             } catch (Exception e) {
-                // TODO: handle exception
+
                 System.out.println("Array Index Out of Bound");
             } finally {
                 System.out.println("inner Finally");
             }
         }
+        sc.close();
     }
+
 }

@@ -1,7 +1,5 @@
 package ExceptionHandling.customException;
 
-import ExceptionHandling.customException.exception.*;
-import ExceptionHandling.customException.model.*;
 import ExceptionHandling.customException.service.*;
 
 public class BankMain {

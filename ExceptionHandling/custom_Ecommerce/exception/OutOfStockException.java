@@ -1,0 +1,9 @@
+package ExceptionHandling.custom_Ecommerce.exception;
+
+public class OutOfStockException extends Exception {
+
+    public OutOfStockException(String message) {
+        super(message);
+    }
+
+}

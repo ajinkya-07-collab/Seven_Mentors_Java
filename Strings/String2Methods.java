@@ -13,5 +13,7 @@ public class String2Methods {
         for (String n : names) {
             System.out.print(n + " | ");
         }
+
+        sc.close();
     }
 }
