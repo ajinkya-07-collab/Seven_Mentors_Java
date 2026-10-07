@@ -5,7 +5,7 @@ import java.util.Queue;
 
 public class PlayerService {
 
-    Queue<PlayersModel> queue = new ArrayDeque<>();
+    private Queue<PlayersModel> queue = new ArrayDeque<>();
 
     // add all players
     public void addPlayer(PlayersModel player) {
@@ -28,18 +28,13 @@ public class PlayerService {
         for (int i = 0; i < 3; i++) {
             System.out.println("=============================================");
             // player comes to bat
-            if (!queue.isEmpty()) {
-                System.out.println("Next Player to bat : " + queue.peek());
-            } else {
-                return;
-            }
+
+            System.out.println("Next Player to bat : " + queue.peek());
 
             // playerout
-            if (!queue.isEmpty()) {
-                System.out.println("Player Got Out : " + queue.poll());
-            } else {
-                return;
-            }
+
+            System.out.println("Player Got Out : " + queue.poll());
+
             System.out.println("=============================================");
         }
 
